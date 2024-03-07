@@ -18,7 +18,7 @@ header.black {
 }
 
 .header--logo {
-  height: 100px;
+  height: 90px;
 }
 
 .header--logo img {
@@ -37,4 +37,21 @@ header.black {
 footer {
   margin: 50px 0;
   text-align: center;
+}
+
+.header--navigation {
+  margin-right: auto;
+}
+
+.header--navigation li {
+  color: #D6D3D0;
+  display: inline;
+  margin-left: 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.header--navigation li:hover {
+  color: #848384;
+  transition: all ease 0.3s;
 }

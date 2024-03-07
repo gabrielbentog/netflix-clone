@@ -1,5 +1,5 @@
-const API_KEY = process.env.API_KEY;
-const API_BASE = process.env.API_BASE;
+const API_KEY = "163def5c496f45de4d4b29b0004774d3";
+const API_BASE = "https://api.themoviedb.org/3";
 
 /*
 - Netflix Originals

@@ -1,5 +1,6 @@
 import React from "react";
 import './FeaturedMovie.css'
+import PlayArrow from '../assets/icons/play_arrow.svg';
 
 const FeaturedMovie = ({ item }) => {
   let releaseDate = new Date(item.first_air_date);
@@ -20,17 +21,11 @@ const FeaturedMovie = ({ item }) => {
       <div className="featured--vertical">
         <div className="featured--horizontal">
           <div className="featured--name">{item.original_name}</div>
-          <div className="featured--info">
-            <div className="featured--points">{item.vote_average} pontos</div>
-            <div className="featured--year">{releaseDate.getFullYear()}</div>
-            <div className="featured--seasons">{item.number_of_seasons} temporada{item.number_of_seasons !== 1 ? 's' : ''}</div>
-          </div>
           <div className="featured--description">{limitedOverview}</div>
           <div className="featured--buttons">
-            <a href={`/watch/${item.id}`} className="featured--watchbutton">Assistir</a>
-            <a href={`/list/add/${item.id}`} className="featured--mylistbutton">+ Minha Lista</a>
+            <a href={`/watch/${item.id}`} className="featured--watchbutton"> <img src={PlayArrow} alt="Play Arrow" style={{ width: 30, marginRight: 10 }} />Assistir</a>
+            <a href={`/list/add/${item.id}`} className="featured--moreinfo">Mais informações</a>
           </div>
-          <div className="featured--genres"><strong>Gênegeros: {genres.join(', ')}</strong></div>
         </div>
       </div>
 

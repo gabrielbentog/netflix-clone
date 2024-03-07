@@ -5,13 +5,11 @@
 .featured--vertical {
   width: inherit;
   height: inherit;
-  background: linear-gradient(to top, #111 10%, transparent 90%);
 }
 
 .featured--horizontal {
   width: inherit;
   height: inherit;
-  background: linear-gradient(to right, #111 30%, transparent 70%);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,12 +21,6 @@
 .featured--name {
   font-size: 60px;
   font-weight: bold;
-}
-
-.featured--info {
-  font-size: 18px;
-  font-weight: bold;
-  margin-top: 15px;
 }
 
 .featured--points,
@@ -54,20 +46,21 @@
 }
 
 .featured--watchbutton,
-.featured--mylistbutton {
+.featured--moreinfo {
   display: inline-block;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
   padding: 12px 25px;
   border-radius: 5px;
   text-decoration: none;
   margin-right: 15px;
-  opacity: 1
+  text-align: center;
 }
 
 .featured--watchbutton:hover,
-.featured--mylistbutton:hover {
-  opacity: 0.7;
+.featured--moreinfo:hover {
+  background-color: rgba(96, 114, 126, 0.4);
+  /* Cor de fundo com 50% de opacidade */
 }
 
 .featured--watchbutton {
@@ -75,15 +68,13 @@
   color: #000;
 }
 
-.featured--mylistbutton {
-  background-color: #333;
+.featured--moreinfo {
+  background-color: rgba(96, 114, 126, 0.8);
+  /* Cor de fundo com 50% de opacidade */
+  /* Cor de fundo com 50% de opacidade */
   color: #fff;
-}
-
-.featured--genres {
-  margin-top: 15px;
-  font-size: 18px;
-  color: #999;
+  /* Cor do texto */
+  /* Outros estilos conforme necessário */
 }
 
 @media (max-width: 760px) {
@@ -95,10 +86,6 @@
     font-size: 40px;
   }
 
-  .featured--info {
-    font-size: 16px;
-  }
-
   .featured--description {
     font-size: 14px;
     max-width: 100%;
@@ -106,11 +93,7 @@
   }
 
   .featured--watchbutton,
-  .featured--mylistbutton {
+  .featured--moreinfo {
     font-size: 16px;
-  }
-
-  .featured--genres {
-    font-size: 14px;
   }
 }
